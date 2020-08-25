@@ -96,7 +96,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 ### 🌎 Links úteis
 
-* [🌍 Best Operating System in 2020 | G2](https://www.g2.com/categories/operating-system/)
+* 🌍 [Best Operating System in 2020 - G2](https://www.g2.com/categories/operating-system/)
 
 ----
 Prof. Diego Neri, 2020-.
