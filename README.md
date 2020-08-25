@@ -30,44 +30,51 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 ## Conteúdo
 
-### 📚 Introdução - Sistemas Operacionais
+### 📚 1) Introdução - Sistemas Operacionais
 
 * 📷 [O que é um sistema operacional - Visão Geral](https://docs.google.com/presentation/d/1s9dmzdQqWCkG56aSNwqmbzYxvwrQo4HZkhOYjSsNHsM/edit?usp=sharing)
 * 📷 [História dos sistemas operacionais](https://docs.google.com/presentation/d/1Ayyp8jSM6CQv8Wz53VAjccKOiLF1DQfmVSlAPMDNFoM/edit?usp=sharing)
 * 📷 [História dos sistemas operacionais - Resumo](https://drive.google.com/file/d/1cLI7w2H7TYp_OrivPpAcavXNIdfgT7VY/view?usp=sharing)
 
-### 🔢 Interface de linha de comando - _CLI - Command Line Interface_
+#### 🙌 Extras
+
+* 📺 [Univesp - Sistemas Operacionais – Aula 01 - Conceito de SO e Histórico](<https://www.youtube.com/watch?v=CCHZ_06DoEA>)
+* 📺 [Univesp - Sistemas Operacionais – Aula 02 - Tipos e Estruturas de SO](<https://www.youtube.com/watch?v=_J4CVHgXQ1c>)
+* 📺 [História dos Sistemas Operacionais - Enryson Ferraz](<https://www.youtube.com/watch?v=9rC9GilX1Io>)
+* 📺 [Sistema Operacional - Animação](<https://www.youtube.com/watch?v=nt0P8ZAYuUo>)
+
+### 🔢 2) Interface de linha de comando - _CLI - Command Line Interface_
 
 * _Em breve - Power Shell_
 * _Em breve - MS-DOS_
 
-### 🖼 Interface gráfica - _GUI - Graphic User Interface_
+### 🖼 3) Interface gráfica - _GUI - Graphic User Interface_
 
 * _Em breve - MS Windows_
 
-### 👁 Elementos gráficos
+### 👁 4) Elementos gráficos
 
 * _Em breve_
 
-### 😎 Acessibilidade
+### 😎 5) Acessibilidade
 
 * _Em breve_
 
-### 🤸‍♂️ Serviços do SO
+### 🤸‍♂️ 6) Serviços do SO
 
 * _Em breve_
 
-### ⚙ Ferramentas do SO
+### ⚙ 7) Ferramentas do SO
 
 * _Em breve_
 
-### 🌌 Virtualização
+### 🌌 8) Virtualização
 
 * _Em breve_
 
 ## 🥋 Exercícios
 
-* _Em breve_
+* 25/08/2020 - Questionário - Introdução e História dos Sistemas Operacionais (Acesso via Teams)
 
 ## Outros
 
