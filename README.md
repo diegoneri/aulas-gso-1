@@ -34,7 +34,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 * 📷 [O que é um sistema operacional - Visão Geral](https://docs.google.com/presentation/d/1s9dmzdQqWCkG56aSNwqmbzYxvwrQo4HZkhOYjSsNHsM/edit?usp=sharing)
 * 📷 [História dos sistemas operacionais](https://docs.google.com/presentation/d/1Ayyp8jSM6CQv8Wz53VAjccKOiLF1DQfmVSlAPMDNFoM/edit?usp=sharing)
-* 📷 [História dos sistemas operacionais - Resumo](https://drive.google.com/file/d/1cLI7w2H7TYp_OrivPpAcavXNIdfgT7VY/view?usp=sharing)
+* 📚 [História dos sistemas operacionais - Resumo](https://drive.google.com/file/d/1cLI7w2H7TYp_OrivPpAcavXNIdfgT7VY/view?usp=sharing)
 
 #### 🙌 Extras
 
@@ -74,7 +74,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 ## 🥋 Exercícios
 
-* 25/08/2020 - Questionário - Introdução e História dos Sistemas Operacionais (Acesso via Teams)
+* 01/09/2020 - Questionário - Introdução e História dos Sistemas Operacionais (Acesso via Teams)
 
 ## Outros
 
