@@ -16,8 +16,8 @@ Para a turma do segundo semestre de 2020, as aulas síncronas são às terças-f
 Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 * **Informações para os alunos de GSO I do 1I3 da ETEC Adolpho Berezin:**
-  * [👨‍👩‍👧‍👦 Turma **única**, no Teams](_EM BREVE_)
-  * [📡 Sala de Reunião, no Teams, para as aulas síncronas](_EM BREVE_)
+  * [👨‍👩‍👧‍👦 Turma **única**, no Teams](https://teams.microsoft.com/l/team/19%3a8d08bb22bc6f43ef97465a08f9152c8a%40thread.tacv2/conversations?groupId=9245475b-fc62-48f7-a906-da84271dc4d3&tenantId=ed38466c-b641-437d-9ae9-d801b829fa94)
+  * [📡 Sala de Reunião, no Teams, para as aulas síncronas](https://teams.microsoft.com/l/meetup-join/19%3af31baa9fa2f245c6a4aec4852b10de02%40thread.tacv2/1598393952050?context=%7b%22Tid%22%3a%22ed38466c-b641-437d-9ae9-d801b829fa94%22%2c%22Oid%22%3a%22a48d4871-c88d-424f-861d-1126fa78a714%22%7d)
 
 ## 😱 Entregas (para alunos presenciais)
 
