@@ -26,7 +26,8 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 ## 🛠 Ferramentas
 
-* _Em breve_
+* [MS-DOS - Emulador on-line (Site: jamesfriend)](<https://jamesfriend.com.au/pce-js/ibmpc-games/>)
+* [MS-DOS - Emulador on-line (Site: copy.sh)](<https://copy.sh/v86/?profile=msdos>)
 
 ## Conteúdo
 
