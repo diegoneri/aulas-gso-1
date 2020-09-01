@@ -33,6 +33,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 ### 📚 1) Introdução - Sistemas Operacionais
 
 * 📷 [O que é um sistema operacional - Visão Geral](https://docs.google.com/presentation/d/1s9dmzdQqWCkG56aSNwqmbzYxvwrQo4HZkhOYjSsNHsM/edit?usp=sharing)
+* 📺 [Tipos de Sistemas Operacionais](https://youtu.be/Qz9VLI4nhYU)
 * 📷 [História dos sistemas operacionais](https://docs.google.com/presentation/d/1Ayyp8jSM6CQv8Wz53VAjccKOiLF1DQfmVSlAPMDNFoM/edit?usp=sharing)
 * 📷 [História dos sistemas operacionais - Resumo](https://drive.google.com/file/d/1cLI7w2H7TYp_OrivPpAcavXNIdfgT7VY/view?usp=sharing)
 
@@ -74,7 +75,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 ## 🥋 Exercícios
 
-* 25/08/2020 - Questionário - Introdução e História dos Sistemas Operacionais (Acesso via Teams)
+* 01/09/2020 - Questionário - Introdução e História dos Sistemas Operacionais (Acesso via Teams)
 
 ## Outros
 
@@ -97,6 +98,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 ### 🌎 Links úteis
 
 * 🌍 [Best Operating System in 2020 - G2](https://www.g2.com/categories/operating-system/)
+* 🌍 [Curso de Sistemas Operacionais - Univesp](https://www.youtube.com/watch?v=Rl6HhDvW984&list=PLxI8Can9yAHeK7GUEGxMsqoPRmJKwI9Jw)
 
 ----
 Prof. Diego Neri, 2020-.
