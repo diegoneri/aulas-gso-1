@@ -47,6 +47,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 
 ### 🔢 2) Interface de linha de comando - _CLI - Command Line Interface_
 
+* [_Command Line Interface_ - Interface de linha de comando](content/02-cli.md " Interface de linha de comando")
 * _Em breve - Power Shell_
 * _Em breve - MS-DOS_
 
