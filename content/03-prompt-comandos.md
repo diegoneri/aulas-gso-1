@@ -11,13 +11,16 @@ Ele pode ser usado para executar comandos inseridos, básicos e avançados e rea
 1. Clique no botão Iniciar do Windows
 1. Na caixa de pesquisa e digite uma das opções abaixo:
    * prompt
+
    ![prompt](./image/001a.png)
+
    * cmd
+
    ![cmd](./image/001b.png)
 
 ### Opção 02
 
-1. Pressione a sequência de teclas   + <img src="./icon/001.png" height="35" width="35"> + R
+1. Pressione a sequência de teclas ![Tecla Windows](./icon/001.png =35x35) + R
 1. Na caixa de diálogo `Executar`, digite `cmd` e clique em OK:
 ![Executar](./image/003.png)
 
@@ -105,7 +108,7 @@ No ponto de vista do usuário, um arquivo possui um nome.
 
 É o primeiro diretório na hierarquia. Em sistemas Windows, é representado geralmente por `\` (`C:\`) e em sistemas Unix, por `/`.
 
-### Caminhos (_Paths)
+### Caminhos (_Paths_)
 
 Um caminho ou _path_ é o que determina a localização única a nível de usuário de um arquivo ou diretório em uma árvore de diretórios.
 
@@ -121,36 +124,68 @@ A depender do sistema operacional, podemos ter os seguintes caracteres delimitad
 
 `/`- barra --> utilizado para expressar a hierarquia entre um diretório e um subdiretório ou arquivo contido, em Sistemas Unix.
 
-Exemplos:
-
-~~~absolutos
-C:\Users\Diego
-C:\Users\Diego\Desktop
-\Users\Diego\Desktop
-~~~
-
-~~~relativos
-..\Diego\Desktop
-..\..\Users\Diego
-~~~
-
 Os caminhos podem ser classificados em caminhos absolutos ou relativos.
 
 #### Caminho absoluto
 
-Caminho __absoluto__ ou __completo__ determina o caminho exato de um arquivo ou diretório, independente da localização atual. 
+```bash
+C:\Users\Diego
+C:\Users\Diego\Desktop
+\Users\Diego\Desktop
+```
+
+Caminho __absoluto__ ou __completo__ determina o caminho exato de um arquivo ou diretório, independente da localização atual.
 
 Deve-se incluir o diretório raiz (`\`).  
 
 #### Caminho relativo
 
-O caminho __relativo__ é determinado a partir da localização atual
+O caminho __relativo__ é determinado a partir da localização atual.
+
+Então, utiliza-se as referências para se determinar caminhos relativos:
+
+* **acima** da localização atual. Quanto mais acima, mais distante da raiz.
+
+```bash
+C:\Users\Diego>cd Pictures\Screenshots
+
+#É uma referência relativa para o diretório C:\Users\Diego\Pictures\Screenshots
+```
+
+* **abaixo** da localização atual. Quanto mais abaixo, mais próximo da raiz. Cada nível é determinado por `..`:
+
+```bash
+C:\Users\Diego\Pictures\Screenshots>cd ..\..
+
+#É uma referência relativa para o diretório C:\Users\Diego.
+```
+
+Para `C:\Users\Diego\Pictures\Screenshots`:
+
+* `..` --> C:\Users\Diego\Pictures
+* `..\..` --> C:\Users\Diego
+* `..\..\..` --> C:\Users
+* `..\..\..\..` --> C:\
+
+**Obs: Não há anterior para a raiz.**
+
+Ainda há a referência `.`, que indica a localização atual.
 
 ## Comandos básicos - Diretório
 
 ### dir (_directory_)
 
 Exibe o conteúdo de um diretório. Quando não especificado um, exibe o conteúdo do diretório atual.
+
+Parâmetros:
+
+* `/?` - Ajuda do comando
+* `/A` - Exibe conteúdo com atributos especificados
+  atributos   D  Diretórios              R  Arquivos somente leitura
+              H  Arquivos ocultos        S  Arquivos de sistema
+              -  Prefixo significando negação
+ * `/B` - Usa formatação básica (sem informações de cabeçalho ou resumo).
+ * `/D` - O mesmo que amplo, mas os arquivos são classificados na lista por coluna.
 
 ### cd (_change directory_)
 
