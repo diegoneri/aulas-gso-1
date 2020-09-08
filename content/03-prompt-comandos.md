@@ -35,7 +35,7 @@ Importante diferenciarmos o que é um prompt e o que é um shell.
 
 Um shell é uma interface que nos possibilite a interação com o Sistema Operacional. Neste caso, estamos interagindo via interface de linha de comando.
 
-O prompt nada mais é que a estrutura exibida inicialmente pelo shell, independente do Sistema Operacional:
+O prompt nada mais é que a estrutura exibida pelo shell, independente do Sistema Operacional:
 
 ![Prompt](image/005.png)
 
