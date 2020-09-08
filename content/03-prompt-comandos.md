@@ -47,10 +47,6 @@ Ele pode ser alterado para exibir o que você desejar, como o nome do diretório
 prompt <opções>
 ```
 
-#### Opções
-
-<https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/prompt>
-
 #### Valor padrão
 
 ```sh
@@ -69,6 +65,10 @@ ou
 prompt $m$p$g
 ```
 
+#### Opções - prompt
+
+<https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/prompt>
+
 * `$M` --> nome remoto associado a pasta, no caso de ser um diretório de rede;
 * `$P` --> caminho completo da pasta atual;
 * `$G` --> caracter ">";
@@ -82,15 +82,15 @@ Outras opções úteis:
 * `%username%` --> nome do usuário logado;
 * `%computername%`--> nome do computador.
 
-## Comandos básicos
+## Comandos básicos de ajuda
 
 ### help
 
 Exibe a ajuda do shell de comandos.
 
-### tree
+### Parâmetro `? (/?)`
 
-Exibe graficamente a estrutura de diretório do path atual ou de um especificado.
+Boa parte dos comandos aceitam o parâmetro `?` para consultar a ajuda de um determinado comando. Isto se torna muito útil quando você precisa realizar uma operação e não possui acesso a internet.
 
 ## Arquivos, diretórios e caminhos (_paths_)
 
@@ -189,27 +189,78 @@ Exibe o conteúdo de um diretório. Quando não especificado um, exibe o conteú
 
 Parâmetros:
 
-* `/?` - Ajuda do comando
 * `/A` - Exibe conteúdo com atributos especificados
-  atributos   D  Diretórios              R  Arquivos somente leitura
-              H  Arquivos ocultos        S  Arquivos de sistema
-              -  Prefixo significando negação
- * `/B` - Usa formatação básica (sem informações de cabeçalho ou resumo).
- * `/D` - O mesmo que amplo, mas os arquivos são classificados na lista por coluna.
 
-### cd (_change directory_)
+   | Atributo  | Descrição                    |
+   |-----------|------------------------------|
+   | D         | Diretórios                   |
+   | R         | Arquivos somente leitura     |
+   | H         | Arquivos ocultos             |
+   | S         | Arquivos de sistema          |
+   | -         | Prefixo significando negação |
+
+* `/B` - Usa formatação básica (sem informações de cabeçalho ou resumo).
+* `/W` - Exibe os resultados em coluna, classificados por linha.
+* `/D` - Exibe os resultados em coluna, classificados por coluna.
+* `/O` - Determina uma ordenação, a partir de uma classificação
+
+   | Ordenação  | Classificação                |
+   |------------|------------------------------|
+   | N          | Alfabética por nome          |
+   | E          | Alfabética por extensão      |
+   | G          | Diretórios primeiro          |
+   | S          | Tamanho                      |
+   | D          | Data e hora                  |
+   | -          | Prefixo significando negação |
+
+* `/X` - Exibe um formato curto de arquivo, muito utilizado em sistemas Windows até o 98 SE.
+
+### cd ou chdir (_change directory_)
 
 Altera o diretório corrente. Quando não especificado um, exibe o _path_ atual.
+
+#### Sintaxe - cd
+
+```bash
+CD [caminho relativo]
+```
+
+```bash
+CD [caminho absoluto]
+```
 
 ### md ou mkdir (_make directory_)
 
 Cria um ou mais diretórios.
 
+#### Sintaxe - md
+
+```bash
+MD [<novoDir1 novoDir2 ...>]
+```
+
 ### rd ou rmdir (_remove directory_)
 
 Remove um ou mais diretórios.
 
-TODO: listar demais comandos.
+```bash
+RD [dir1 <dir2 ...>]
+```
+
+### tree
+
+Exibe graficamente a estrutura de diretório do path atual ou de um especificado.
+
+#### Sintaxe - tree
+
+```bash
+TREE [unidade:][caminho] [/F] [/A]
+```
+
+#### Opções - tree
+
+* `/F` --> Exibir também o nome dos arquivos;
+* `/A` --> Usa os caracteres da Tabela ASCII ao invés de caracteres estendidos (recomendado);
 
 ## Saída do shell
 
@@ -223,10 +274,87 @@ Isto é útil quando você precisa salvar as informações de processamento do c
 
 ### Redirecionar para a área de transferência
 
+#### Sintaxe - clip
+
+```bash
+[COMANDO] | clip
+```
+
+Exemplo
+
+```bash
+C:\Users\Diego> tree /A | clip
+```
+
 ### Redirecionar para um arquivo
 
 #### Criando um novo (ou substituindo) um arquivo
 
+```bash
+[COMANDO] > meuArquivo.txt
+```
+
+Exemplo
+
+```bash
+C:\Users\Diego> tree Desktop /A > arquivosAreaTrabalho.txt
+```
+
+Obs: se o arquivo existir, ele será substituído.
+
 #### Concatenando informações em um arquivo
 
+```bash
+[COMANDO] >> meuArquivo.txt
+```
+
+Exemplo
+
+```bash
+C:\Users\Diego> dir /w Documents >> C:\Users\Diego\Desktop\listaMeusArquivos.txt
+C:\Users\Diego> dir /w Desktop >> C:\Users\Diego\Desktop\listaMeusArquivos.txt
+```
+
 #### Redirecionando erros
+
+```bash
+[COMANDO] 1> meuArquivo.txt 2> erros.txt
+```
+
+##### Exemplo - saída de erro para arquivo diferente
+
+```bash
+C:\Users\Diego> dir programa.exe 1> relatorio.txt 2> erros.txt
+```
+
+##### Exemplo - saída de erro para o mesmo arquivo
+
+```bash
+C:\Users\Diego> dir programa.exe 1> relatorio.txt 2>&1
+```
+
+Obs: da mesma forma, pode-se usar o operador `>>` caso queira que a saída do comando seja concatenada em arquivo existente.
+
+##### Concatenando saída e erro:
+
+```bash
+C:\Users\Diego> dir programa.exe 1>> relatorio.txt 2>>&1
+```
+
+ou
+
+```bash
+C:\Users\Diego> dir programa.exe 1>> relatorio.txt 2>> erros.txt
+```
+
+##### Concatenando __somente__ saída:
+
+```bash
+C:\Users\Diego> dir programa.exe 1>> relatorio.txt 2> erros.txt
+```
+
+##### Concatenando __somente__ erro:
+
+```bash
+C:\Users\Diego> dir programa.exe 1> relatorio.txt 2>> erros.txt
+```
