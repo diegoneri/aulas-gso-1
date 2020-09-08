@@ -22,6 +22,7 @@ Ele pode ser usado para executar comandos inseridos, básicos e avançados e rea
 
 1. Pressione a sequência de teclas ![Tecla Windows](./icon/001.png) + R
 1. Na caixa de diálogo `Executar`, digite `cmd` e clique em OK:
+
 ![Executar](./image/003.png)
 
 Todas as opções levam à janela a seguir:
