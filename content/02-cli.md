@@ -24,4 +24,3 @@ Ainda há o PowerShell Core, a versão de código aberto do PowerShell.
 Começaremos nossa jornada utilizando o Prompt de Comandos do Windows, para então utilizar o [_Power Shell ₢_](https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7), a estrutura mais recente da Microsoft para shells de linha de comando multiplataforma.
 
 Próximo tópico: [➡ Prompt de Comandos](03-prompt-comandos.md)
-Próximo tópico: [➡ Power Shell](04-power-shell.md)
