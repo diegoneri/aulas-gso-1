@@ -69,9 +69,18 @@ ou
 prompt $m$p$g
 ```
 
-* $m --> nome remoto associado a pasta, no caso de ser um diretório de rede.
-* $p --> caminho completo da pasta atual.
-* $g --> caracter ">".
+* `$M` --> nome remoto associado a pasta, no caso de ser um diretório de rede;
+* `$P` --> caminho completo da pasta atual;
+* `$G` --> caracter ">";
+* `$C` --> caracter "(";
+* `$F` --> caracter ")";
+* `$S` --> caracter " ";
+* `$_` --> retorno de carro ou quebra de linha.
+
+Outras opções úteis:
+
+* `%username%` --> nome do usuário logado;
+* `%computername%`--> nome do computador.
 
 ## Comandos básicos
 
