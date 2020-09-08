@@ -20,7 +20,7 @@ Ele pode ser usado para executar comandos inseridos, básicos e avançados e rea
 
 ### Opção 02
 
-1. Pressione a sequência de teclas ![Tecla Windows](./icon/001.png =35x35) + R
+1. Pressione a sequência de teclas ![Tecla Windows](./icon/001.png) + R
 1. Na caixa de diálogo `Executar`, digite `cmd` e clique em OK:
 ![Executar](./image/003.png)
 
