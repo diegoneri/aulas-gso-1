@@ -294,6 +294,212 @@ TREE [unidade:][caminho] [/F] [/A]
 * `/F` --> Exibir também o nome dos arquivos;
 * `/A` --> Usa os caracteres da Tabela ASCII ao invés de caracteres estendidos (recomendado);
 
+## Comandos básicos - Arquivos
+
+### copy
+Copia um arquivo ou grupo deles de uma origem para um destino. 
+
+Para isso, o usuário deve digitar o comando copy mais sua localização atual e, em seguida, seu caminho de destino. 
+
+#### Copiando um arquivo na mesma pasta
+
+```bash
+C:\Users\dfelix\aulaGSO1> copy exemplo01.txt exemplo04.txt 
+```
+![Comando](image/014.gif)
+
+#### Copiando um arquivo em outra pasta
+
+```bash
+C:\Users\dfelix\aulaGSO1> copy exemplo01.txt pasta1
+```
+
+![Comando](image/015.gif)
+
+**Obs: o caminho de pasta01 pode ser relativo ou absoluto!**
+
+O comando aceita o uso de asterisco (*), para substituir caracteres. Por exemplo:
+
+```bash
+C:\Users\dfelix\aulaGSO1> copy *txt pasta2
+```
+
+![Comando](image/016.gif)
+
+### xcopy
+
+Copia arquivos e diretórios de uma origem para um destino. 
+
+#### Parâmetros - xcopy
+
+* `/P` - solicita confirmação ao usuário antes de copiar cada arquivo;
+* `/S` - copia diretórios, desde que não estejam vazios. Para diretórios nesta última condição, basta informar /E /S;
+* `/U` - copia apenas arquivos que já existem no diretório de destino.
+
+Exemplo: 
+
+```bash
+C:\Users\dfelix\aulaGSO1> xcopy /e /s C:\Users\dfelix\aulaGSO1\pasta2 pasta3
+```
+![Comando](image/017.gif)
+
+### robocopy
+(_EM BREVE_)
+
+### mv ou move
+Comando que assume duas funções: renomear diretórios ou arquivos ou mover arquivos.
+
+Renomeando pastas:
+
+```bash
+C:\Users\dfelix\aulaGSO1> move pasta2 pasta02
+```
+![Comando](image/018.gif)
+
+Renomeando arquivos:
+
+```bash
+C:\Users\dfelix\aulaGSO1> move exemplo01.txt exemplo22.txt
+```
+
+Movendo arquivos:
+
+```bash
+C:\Users\dfelix\aulaGSO1> move exemplo02.txt pasta2
+```
+![Comando](image/019.gif)
+
+### ren ou rename
+
+Comando que permite renomear arquivos ou pastas. Possui sintaxe idêntica ao mv ou move.
+
+### del ou delete
+
+Comando que permite excluir arquivos, baseados no critério estabelecido.
+
+```bash
+C:\Users\dfelix\aulaGSO1> del exemplo*txt
+```
+![Comando](image/020.gif)
+
+### find
+(_EM BREVE_)
+
+### type
+(_EM BREVE_)
+
+### attrib
+(_EM BREVE_)
+
+### comp
+(_EM BREVE_)
+
+### edit
+
+É utilizado para abrir o editor de texto no shell de comandos.
+
+Nele, podemos salvar arquivos em várias extensões. Equivale ao `vi` do Linux.
+
+OBS.: Este comando foi removido do Windows 10.
+
+Dica: utilize diretamente o `notepad` ou outro editor de preferência.
+
+## Comandos básicos - sistema
+
+### cls
+
+Limpa a tela.
+
+Exemplo:
+```bash
+C:\Users\Diego> cls
+```
+![Comando](image/013.gif)
+
+### title
+
+Altera o título da janela do shell.
+
+Exemplo:
+```bash
+C:\Users\Diego> title Aula GSO I
+```
+![Comando](image/009.gif)
+
+### date
+
+Exibe e/ou altera a data do sistema.
+
+Exemplo:
+```bash
+C:\Users\Diego> date
+```
+![Comando](image/010.gif)
+
+### time
+
+Exibe e/ou altera a hora do sistema.
+
+Exemplo:
+```bash
+C:\Users\Diego> time
+```
+![Comando](image/011.gif)
+
+### ver
+
+Exibe a versão do sistema.
+
+Exemplo:
+```bash
+C:\Users\Diego> ver
+```
+![Comando](image/012.gif)
+
+## Comandos avançados - sistema
+(_EM BREVE_)
+
+### tasklist e taskkill
+(_EM BREVE_)
+
+### path
+(_EM BREVE_)
+
+### label
+(_EM BREVE_)
+
+### chkdsk
+(_EM BREVE_)
+
+## Trabalhando com mais de um comando por instrução
+
+Em algumas situações, você precisará executar diversos comandos em uma mesma instrução, para que os mesmos façam sentido. Os operadores abaixo fazem este papel:
+
+* `|` (_pipe_) --> utiliza a saída do primeiro comando (à esquerda do pipe). Veja exemplo em [Sintaxe - clip](#sintaxe---clip) 
+
+* `&` ("e" comercial) --> Caso o comando à esquerda seja inválido, o próximo (à direita) executará. 
+
+Exemplo:
+
+```bash
+C:\Users\Diego> teste & dir
+```
+![Comando](image/006.gif)
+
+* `&&` (duplo "e" comercial) --> Caso o comando à esquerda seja inválido, o próximo (à direita) **não** executará.
+
+```bash
+C:\Users\Diego> teste && dir
+```
+![Comando](image/007.gif)
+
+Ambos `&` e `&&` aceitam continuidade, ou seja:
+
+```bash
+C:\Users\Diego> cd Desktop && dir && cd .. && dir /ad
+```
+![Comando](image/008.gif)
+
 ## Saída do shell
 
 A saída do shell ou console é um evento de impressão das informações em tela.
