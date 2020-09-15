@@ -4,6 +4,38 @@ O shell de comandos é um programa que reproduz uma interface de usuário basead
 
 Ele pode ser usado para executar comandos inseridos, básicos e avançados e realizar funções administrativas em um computador. O _shell_ muitas vezes é utilizado na resolução de muitos problemas de uso do Windows, sejam eles a nível de operacionalização, automação, desenvolvimento e outras características de um Técnico em Informática.
 
+## Índice
+
+* [Primeiros passos: como abrir](#primeiros-passos-como-abrir)
+  * [Opção 01](#op%C3%A7%C3%A3o-01)
+  * [Opção 02](#op%C3%A7%C3%A3o-02)
+* [Prompt: o que é](#prompt-o-que-%C3%A9)
+  * [Sintaxe](#sintaxe)
+    * [Valor padrão](#valor-padr%C3%A3o)
+    * [Opções - prompt](#op%C3%A7%C3%B5es---prompt)
+* [Comandos básicos de ajuda](#comandos-b%C3%A1sicos-de-ajuda)
+  * [help](#help)
+  * [Parâmetro `? (/?)`](#par%C3%A2metro--)
+* [Arquivos, diretórios e caminhos (_paths_)](#arquivos-diret%C3%B3rios-e-caminhos-paths)
+  * [Arquivos](#arquivos)
+  * [Diretórios](#diretórios)
+    * [Diretório raiz](#diret%C3%B3rio-raiz)
+  * [Caminhos (_Paths_)](#caminhos-paths)
+    * [Caminho absoluto](#caminho-absoluto)
+    * [Caminho relativo](#caminho-relativo)
+* [Comandos básicos - Diretório](#comandos-b%C3%A1sicos---diret%C3%B3rio)
+  * [dir (_directory_)](#dir-directory)
+  * [cd ou chdir (_change directory_)](#cd-ou-chdir-change-directory)
+  * [md ou mkdir (_make directory_)](#md-ou-mkdir-make-directory)
+  * [rd ou rmdir (_remove directory_)](#rd-ou-rmdir-remove-directory)
+  * [tree](#tree)
+* [Saída do shell](#sa%C3%ADda-do-shell)
+  * [Redirecionar para a área de transferência](#redirecionar-para-a-%C3%A1rea-de-transfer%C3%AAncia)
+  * [Redirecionar para um arquivo](#redirecionar-para-um-arquivo)
+    * [Criando um novo (ou substituindo) um arquivo](#criando-um-novo-ou-substituindo-um-arquivo)
+    * [Concatenando informações em um arquivo](#concatenando-informa%C3%A7%C3%B5es-em-um-arquivo)
+    * [Redirecionando erros](#redirecionando-erros)
+
 ## Primeiros passos: como abrir
 
 ### Opção 01
