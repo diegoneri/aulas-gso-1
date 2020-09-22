@@ -29,6 +29,25 @@ Ele pode ser usado para executar comandos inseridos, básicos e avançados e rea
   * [md ou mkdir (_make directory_)](#md-ou-mkdir-make-directory)
   * [rd ou rmdir (_remove directory_)](#rd-ou-rmdir-remove-directory)
   * [tree](#tree)
+* [Comandos básicos - Arquivos](#comandos-b%C3%A1sicos---arquivos "Comandos básicos - Arquivos")
+  * [copy](#copy)
+  * [xcopy](#xcopy)
+  * [robocopy](#robocopy)
+  * [mv ou move](#mv-ou-move)
+  * [ren ou rename](#ren-ou-rename)
+  * [del ou delete](#del-ou-delete)
+  * [attrib](#attrib)
+  * [type](#type)
+  * [edit](#edit)
+  * [find](#find)
+  * [comp](#comp)
+* [Comandos básicos - sistema](#comandos-b%C3%A1sicos---sistema)
+  * [cls](#cls)
+  * [title](#title)
+  * [date](#date)
+  * [time](#time)
+  * [ver](#ver)
+* [Trabalhando com mais de um comando por instrução](#trabalhando-com-mais-de-um-comando-por-instru%C3%A7%C3%A3o)  
 * [Saída do shell](#sa%C3%ADda-do-shell)
   * [Redirecionar para a área de transferência](#redirecionar-para-a-%C3%A1rea-de-transfer%C3%AAncia)
   * [Redirecionar para um arquivo](#redirecionar-para-um-arquivo)
@@ -139,6 +158,16 @@ Um arquivo pode representar informações das mais diversas naturezas, como um t
 Cada arquivo precisa de uma identificação. No ponto de vista do Sistema Operacional, ele possui uma identificação de endereço no disco secundário. Abordaremos detalhes quando falarmos de __Sistema de Arquivos__.
 
 No ponto de vista do usuário, um arquivo possui um nome.
+
+#### Arquivo morto
+
+É um atributo de arquivo, utilizado no Windows.Ele é marcado toda vez que um arquivo é criado ou modificado e salvo. Existe desde o DOS e serve para facilitar backups.
+
+Mostrar ou modificar esse atributo (além de "propriedades") pode ser feito com o comando "attrib" no shell de comandos. 
+
+Esse atributo é comumente usado para fazer backups. 
+
+Por exemplo: um programa semanalmente o backup de todos os arquivos de um computador. Após a conclusão do backup, ele remove apaga esse atributo de todos os arquivos. Nos backups seguintes, o backup só é feito dos arquivos que tenham esse atributo (ou seja, que foram modificados ou criados).
 
 ### Diretórios
 
@@ -326,6 +355,24 @@ C:\Users\dfelix\aulaGSO1> copy *txt pasta2
 
 ![Comando](image/016.gif)
 
+### copy con
+
+Cria um novo arquivo a partir do shell.
+
+Sintaxe
+
+```bash
+copy con [<Drive>:][<Path>]<FileName> [ENTER]
+
+#Digitar conteúdo de arquivo (múltiplas linhas)
+
+[Ctrl+Z]
+```
+
+Exemplo
+
+![Comando](image/024.gif)
+
 ### xcopy
 
 Copia arquivos e diretórios de uma origem para um destino. 
@@ -382,17 +429,63 @@ C:\Users\dfelix\aulaGSO1> del exemplo*txt
 ```
 ![Comando](image/020.gif)
 
-### find
-(_EM BREVE_)
+### attrib
+
+Exibe, define ou remove atributos atribuídos a arquivos ou diretórios. Se usado sem parâmetros, attrib exibe atributos de todos os arquivos no diretório atual.
+
+Parâmetros 
+
+   | Parâmetro |	Descrição                     |
+   |-----------|--------------------------------|
+   | {+\|-}r   | Define ( + ) ou limpa ( - ) o atributo de arquivo somente leitura. |
+   | {+\|-}a   | Define ( + ) ou limpa ( - ) o atributo de [arquivo morto*](#arquivo-morto). |
+   | {+\|-}s   |	Define ( + ) ou limpa ( - ) o atributo de arquivo do sistema. |
+   | {+\|-}h   | Define ( + ) ou limpa ( - ) o atributo de arquivo oculto. |
+   | {+\|-}i   | Define ( + ) ou limpa ( - ) o atributo de arquivo sem conteúdo indexado. |
+   | \[\<drive\>\:]<br>\[\<path\>\]<br>\[\<filename\>\] |	Especifica o local e o nome do diretório, arquivo ou grupo de arquivos para os quais você deseja exibir ou alterar atributos. <br><br> Você pode usar o ? e * caracteres curinga no parâmetro filename para exibir ou alterar os atributos de um grupo de arquivos.
+   | /s	| Aplica atributos a arquivos correspondentes no diretório atual e em todos os seus subdiretórios. |
+   | /d |	Aplica atributos a diretórios.|
+
+Exemplo:
+
+![Comando](image/022.gif)
+
+```bash
+#Exibe os atributos de estruturaGSO1.txt
+attrib estruturaGSO1.txt
+
+#Adiciona o atributo "indexado" a estruturaGSO1.txt
+attrib +i estruturaGSO1.txt
+
+#Exibe os atributos de estruturaGSO1.txt
+attrib estruturaGSO1.txt
+
+#Adiciona o atributo "somente leitura" a estruturaGSO1.txt
+attrib +r estruturaGSO1.txt
+
+#Exibe os atributos de estruturaGSO1.txt
+attrib estruturaGSO1.txt
+
+#Remove os atributos "somente leitura e indexado" a estruturaGSO1.txt
+attrib -i -r estruturaGSO1.txt
+
+#Exibe os atributos de estruturaGSO1.txt
+attrib estruturaGSO1.txt
+```
 
 ### type
-(_EM BREVE_)
 
-### attrib
-(_EM BREVE_)
+Comando que exibe o conteúdo de um arquivo texto.
 
-### comp
-(_EM BREVE_)
+Sintaxe:
+
+```bash
+type [<Drive>:][<Path>]<FileName>
+```
+
+Exemplo:
+
+![Comando](image/023.gif)
 
 ### edit
 
@@ -402,7 +495,15 @@ Nele, podemos salvar arquivos em várias extensões. Equivale ao `vi` do Linux.
 
 OBS.: Este comando foi removido do Windows 10.
 
+![Comando](image/021.gif)
+
 Dica: utilize diretamente o `notepad` ou outro editor de preferência.
+
+### find
+(_EM BREVE_)
+
+### comp
+(_EM BREVE_)
 
 ## Comandos básicos - sistema
 
