@@ -305,8 +305,10 @@ MD [<novoDir1 novoDir2 ...>]
 Remove um ou mais diretórios.
 
 ```bash
-RD [dir1 <dir2 ...>]
+RD [dir1 <dir2 ...>] 
 ```
+
+`/S` --> Remove toda a estrutura, inclusive, arquivos.
 
 ### tree
 

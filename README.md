@@ -78,6 +78,7 @@ Horários de lives e disponibilidade via chat, confiram no _Microsoft Teams_.
 ## 🥋 Exercícios
 
 * 01/09/2020 - Questionário - Introdução e História dos Sistemas Operacionais (Acesso via Teams)
+* [Shell de comandos - Lista 01](exercises/01-cli-files.md) 🔥
 
 ## Outros
 
