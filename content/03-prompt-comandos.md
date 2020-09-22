@@ -557,6 +557,22 @@ C:\Users\Diego> ver
 ```
 ![Comando](image/012.gif)
 
+### doskey
+
+Recupera comandos de shell executados anteriormente.
+
+Sintaxe
+
+```bash
+doskey /history
+#ou
+doskey /h
+```
+
+Exemplo
+
+![Comando](image/025.gif)
+
 ## Comandos avançados - sistema
 (_EM BREVE_)
 
