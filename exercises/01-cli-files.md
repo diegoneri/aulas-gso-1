@@ -49,3 +49,6 @@ Dica: execute o shell de comandos como **ADMINISTRADOR**
 1. Limpe os atributos somente leitura e sistema dos arquivos do diretório atual e de seus subdiretórios.
 1. Apague todo o conteúdo de c:\aulaGSO1, inclusive a pasta.
 1. Recupere o histórico de comandos digitados. Redirecione a saída e indique um path absoluto para salvar o arquivo.
+1. Cite um exemplo de grupo de comandos utilizando o operador &&. Se o primeiro comando falhar, o segundo executará?
+1. Cite um exemplo de grupo de comandos utilizando o operador &. Se o primeiro comando falhar, o segundo executará?
+1. Pesquise a respeito do comando robocopy. Qual o seu entendimento sobre o comando? Dê um exemplo de sintaxe e descreva o significado.
