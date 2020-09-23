@@ -26,7 +26,7 @@ No Teams, favor *ANEXAR* um único arquivo .txt, contendo os comandos solicitado
 Dica: execute o shell de comandos como **ADMINISTRADOR**
 
 1. Altere o título da janela para "Aula GSO 1"
-1. Crie o diretório c:\aulaGSO1
+1. Crie o diretório c:\aulaGSO1 e acesse a pasta, de forma contínua
 1. Crie os diretórios pasta1, pasta2, pasta3
 1. Acesse o diretório pasta1
 1. Crie um arquivo chamado exemplo01.txt, sem linhas de conteúdo
