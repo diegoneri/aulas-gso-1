@@ -1,9 +1,9 @@
-#Exercícios: Linha de comandos - Shell do Windows
+Exercícios: Linha de comandos - Shell do Windows
 
 Os exercícios a seguir deverão gerar uma série de comandos para executar as instruções.
 
 Exemplo:
-* Crie um novo arquivo chamado batata.xt e escreva duas linhas de conteúdo.
+* Crie um novo arquivo chamado batata.txt e escreva duas linhas de conteúdo.
 
 Então, sua resposta será:
 
