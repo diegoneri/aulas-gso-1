@@ -52,3 +52,14 @@ Dica: execute o shell de comandos como **ADMINISTRADOR**
 1. Cite um exemplo de grupo de comandos utilizando o operador &&. Se o primeiro comando falhar, o segundo executará?
 1. Cite um exemplo de grupo de comandos utilizando o operador &. Se o primeiro comando falhar, o segundo executará?
 1. Pesquise a respeito do comando robocopy. Qual o seu entendimento sobre o comando? Dê um exemplo de sintaxe e descreva o significado.
+
+## Alternativa
+Caso você não consiga executar o Shell de Comandos (Prompt de Comandos) como Administrador, use o caminho padrão ao abrir o Shell:
+
+* C:\Users\<SeuUsuario>\aulaGSO1
+ou
+* C:\Usuários\<SeuUsuario>\aulaGSO1
+
+Exemplo:
+
+![Exemplo](../content/image/026.gif)
