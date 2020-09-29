@@ -56,9 +56,9 @@ Dica: execute o shell de comandos como **ADMINISTRADOR**
 ## Alternativa
 Caso você não consiga executar o Shell de Comandos (Prompt de Comandos) como Administrador, use o caminho padrão ao abrir o Shell:
 
-* C:\Users\<SeuUsuario>\aulaGSO1
+* `C:\Users\<SeuUsuario>\aulaGSO1`
 ou
-* C:\Usuários\<SeuUsuario>\aulaGSO1
+* `C:\Usuários\<SeuUsuario>\aulaGSO1`
 
 Exemplo:
 
